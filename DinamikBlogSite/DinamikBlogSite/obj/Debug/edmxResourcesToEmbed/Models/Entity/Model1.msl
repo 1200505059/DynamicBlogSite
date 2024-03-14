@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogSiteDBModelStoreContainer" CdmEntityContainer="BlogSiteDBEntities1">
+    <EntitySetMapping Name="TBLADMİN">
+      <EntityTypeMapping TypeName="BlogSiteDBModel.TBLADMİN">
+        <MappingFragment StoreEntitySet="TBLADMİN">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="AdminUserName" ColumnName="AdminUserName" />
+          <ScalarProperty Name="AdminPassword" ColumnName="AdminPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLCARDS">
+      <EntityTypeMapping TypeName="BlogSiteDBModel.TBLCARDS">
+        <MappingFragment StoreEntitySet="TBLCARDS">
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CardBaslik" ColumnName="CardBaslik" />
+          <ScalarProperty Name="CardAciklama" ColumnName="CardAciklama" />
+          <ScalarProperty Name="cardButon" ColumnName="cardButon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLGİRİS">
+      <EntityTypeMapping TypeName="BlogSiteDBModel.TBLGİRİS">
+        <MappingFragment StoreEntitySet="TBLGİRİS">
+          <ScalarProperty Name="GirisID" ColumnName="GirisID" />
+          <ScalarProperty Name="GirisText1" ColumnName="GirisText1" />
+          <ScalarProperty Name="GirisAdSoyad" ColumnName="GirisAdSoyad" />
+          <ScalarProperty Name="GirisText2" ColumnName="GirisText2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKKİMDA">
+      <EntityTypeMapping TypeName="BlogSiteDBModel.TBLHAKKİMDA">
+        <MappingFragment StoreEntitySet="TBLHAKKİMDA">
+          <ScalarProperty Name="HakkimdaID" ColumnName="HakkimdaID" />
+          <ScalarProperty Name="HakkımdaAciklama" ColumnName="HakkımdaAciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

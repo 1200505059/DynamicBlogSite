@@ -1,0 +1,67 @@
+﻿@model List<DinamikBlogSite.Models.Entity.TBLCARDS>
+<br />
+<br />
+<style>
+    .card {
+        transition: background-color 0.3s;
+    }
+
+        .card:hover {
+            background-color: rgb(0, 0, 0) !important;
+            border-color: yellow !important;
+        }
+
+            .card:hover .card-title,
+            .card:hover .card-text {
+                color: #FFF !important;
+            }
+
+        .card .btn {
+            background-color: #ff0 !important;
+            border-color: #ff0 !important;
+            color: #000 !important;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .card:hover .btn {
+            background-color: #ccc !important;
+            border-color: #f00 !important;
+            color: #000000 !important;
+        }
+</style>
+
+@foreach (var item in ViewBag.haber)
+{
+   
+    <div id="haberler " class="card" style="width: 18rem; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); background-color: #333; border: none; margin-left: 20px; border:2px solid white; display:inline-block; float:left; ">
+        <div class="card-body" style="padding: 20px;">
+            <h2 class="card-title" style="text-align: center; font-family: 'Arial Black', sans-serif; color: #fff; font-size: 36px; margin-bottom: 20px;">
+                @item.CardBaslik
+            </h2>
+
+            <p class="card-text" style="color: #ccc; font-family: 'Arial', sans-serif; font-size: 18px; line-height: 1.6;">
+                @item.CardAciklama
+            </p>
+            <a href="#" class="btn btn-primary" style="display: block; width: 100%; margin: 20px auto 0; border-radius: 30px; font-size: 16px; text-align: center; text-decoration: none; padding: 10px;">@item.cardButon</a>
+        </div>
+
+
+    </div>
+
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

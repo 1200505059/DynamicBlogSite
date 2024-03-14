@@ -1,0 +1,31 @@
+﻿@model DinamikBlogSite.Models.Entity.TBLCARDS
+@{
+    ViewBag.Title = "KardGuncelle";
+    Layout = "~/Views/Shared/_AdminLAyout.cshtml";
+}
+
+<form class="card-form" method="post" style="max-width: 1200px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardID" style="font-weight: bold;">ID</label>
+        <input type="text" class="form-control" id="CardID" name="CardID" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"  value="@Model.CardID">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardBaslik" style="font-weight: bold;">BAŞLIK</label>
+        <input type="text" class="form-control" id="CardBaslik" name="CardBaslik" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"value="@Model.CardBaslik">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardAciklama" style="font-weight: bold;">AÇIKLAMA</label>
+        <input type="text" class="form-control" id="CardAciklama" name="CardAciklama" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"value="@Model.CardAciklama">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="cardButon" style="font-weight: bold;">BUTON</label>
+        <input type="text" class="form-control" id="cardButon" name="cardButon" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" value="@Model.cardButon">
+    </div>
+    <div class="form-group" style="margin-top: 15px;">
+        <button type="submit" class="btn btn-warning" style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #ffc107; color: #fff; cursor: pointer;">GÜNCELLE</button>
+    </div>
+</form>
+
+
+
+

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogSiteDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBLADMİN">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminUserName" Type="varchar" MaxLength="50" />
+    <Property Name="AdminPassword" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLCARDS">
+    <Key>
+      <PropertyRef Name="CardID" />
+    </Key>
+    <Property Name="CardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CardBaslik" Type="varchar" MaxLength="50" />
+    <Property Name="CardAciklama" Type="varchar(max)" />
+    <Property Name="cardButon" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLGİRİS">
+    <Key>
+      <PropertyRef Name="GirisID" />
+    </Key>
+    <Property Name="GirisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GirisText1" Type="varchar" MaxLength="50" />
+    <Property Name="GirisAdSoyad" Type="varchar" MaxLength="50" />
+    <Property Name="GirisText2" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLHAKKİMDA">
+    <Key>
+      <PropertyRef Name="HakkimdaID" />
+    </Key>
+    <Property Name="HakkimdaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HakkımdaAciklama" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="BlogSiteDBModelStoreContainer">
+    <EntitySet Name="TBLADMİN" EntityType="Self.TBLADMİN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLCARDS" EntityType="Self.TBLCARDS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLGİRİS" EntityType="Self.TBLGİRİS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKKİMDA" EntityType="Self.TBLHAKKİMDA" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

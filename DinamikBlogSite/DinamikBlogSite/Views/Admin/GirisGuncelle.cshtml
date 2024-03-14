@@ -1,0 +1,29 @@
+﻿@model DinamikBlogSite.Models.Entity.TBLGİRİS
+@{
+    ViewBag.Title = "GirisGuncelle";
+    Layout = "~/Views/Shared/_AdminLAyout.cshtml";
+}
+
+<form class="card-form" method="post" style="max-width: 1200px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardID" style="font-weight: bold;">ID</label>
+        <input type="text" class="form-control" id="CardID" name="GirisID" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" value="@Model.GirisID">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardID" style="font-weight: bold;">ID</label>
+        <input type="text" class="form-control" id="CardID" name="GirisText1" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" value="@Model.GirisText1">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardID" style="font-weight: bold;">ID</label>
+        <input type="text" class="form-control" id="CardID" name="GirisAdSoyad" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" value="@Model.GirisAdSoyad">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label for="CardID" style="font-weight: bold;">ID</label>
+        <input type="text" class="form-control" id="CardID" name="GirisText2" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" value="@Model.GirisText2">
+    </div>
+    <div class="form-group" style="margin-top: 15px;">
+        <button type="submit" class="btn btn-warning" style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #ffc107; color: #fff; cursor: pointer;">GÜNCELLE</button>
+    </div>
+
+</form>
+

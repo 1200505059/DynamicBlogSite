@@ -1,0 +1,47 @@
+﻿@using DinamikBlogSite.Models.Entity
+@model  List<TBLHAKKİMDA>
+
+
+<style>
+    body {
+        background-color: #333;
+        color: #fff;
+        transition: background-color 0.3s, color 0.3s;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ra {
+        margin: 20px;
+        border: 2px solid white;
+        padding: 20px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+        .ra:hover {
+            background-color: #000;
+            border-color: yellow;
+        }
+
+    .content {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: white;
+    }
+</style>
+
+<div class="ra"id="eyup">
+    <div class="content">
+
+        @foreach (var x in ViewBag.list)
+        {
+            @x.HakkımdaAciklama
+        }
+    </div>
+</div>
+

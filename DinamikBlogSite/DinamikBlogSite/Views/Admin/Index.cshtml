@@ -1,0 +1,81 @@
+﻿@model List<DinamikBlogSite.Models.Entity.TBLGİRİS>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLAyout.cshtml";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: #ddd;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table, .table th, .table td {
+            border: 1px solid #555;
+        }
+
+            .table th, .table td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            .table th {
+                background-color: #555;
+            }
+
+            .table tr:nth-child(even) {
+                background-color: #444;
+            }
+
+    .btn {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .btn-danger {
+        background-color: #d9534f;
+    }
+
+    .btn-success {
+        background-color: #5cb85c;
+    }
+</style>
+<table class="table table-bordered" style="color:white;">
+    <tr>
+        <th>ID</th>
+        <th>TEXT 1</th>
+        <th>AD SOYAD</th>
+        <th>TEXT 2</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    <tbody>
+        @foreach (var giris in Model)
+        {
+            <tr>
+                <th>@giris.GirisID</th>
+                <th>@giris.GirisText1</th>
+                <th>@giris.GirisAdSoyad</th>
+                <th>@giris.GirisText2</th>
+                <th><a href="/Admin/GirisSil/@giris.GirisID" class="btn btn-danger">SİL</a></th>
+                <th><a href="/Admin/GirisGuncelle/@giris.GirisID" class="btn btn-success">GÜNCELLE</a></th>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<th><a href="/Admin/YeniGiris" class="btn btn-primary"> EKLE</a></th>
+
