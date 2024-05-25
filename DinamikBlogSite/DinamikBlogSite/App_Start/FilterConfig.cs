@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace DinamikBlogSite
+namespace DynamicBlogSite
 {
 	public class FilterConfig
 	{
