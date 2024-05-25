@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace DinamikBlogSite
+namespace DynamickBlogSite
 {
 	public class BundleConfig
 	{
